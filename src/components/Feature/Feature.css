@@ -1,0 +1,23 @@
+.Feature {
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+}
+
+.Feature h1 {
+  font-size: 1em;
+}
+
+.Feature:hover {
+  background: white;
+}
+
+.Feature:hover::after {
+  content: "";
+  width: 0; height: 0;
+  border-top: 30px solid white;
+  border-right: 30px solid transparent;
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+}

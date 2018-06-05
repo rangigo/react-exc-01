@@ -1,0 +1,16 @@
+main {
+  background: #efefef;
+}
+
+.MainContainer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.FeatureContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

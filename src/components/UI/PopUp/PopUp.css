@@ -1,0 +1,24 @@
+.PopUp {
+  padding: 10px 10px 10px 40px;
+  display: flex;
+  justify-content: space-between;
+  background: #4f90ca;
+  position: relative;
+}
+
+.PopUp h1 {
+  margin: auto 0;
+  height: fit-content;
+  color: #ccc;
+  font-size: 1em;
+}
+
+.PopUp::after {
+  content: "";
+  width: 0; height: 0;
+  border-top: 50px solid #4f90ca;
+  border-right: 50px solid transparent;
+  position: absolute;
+  bottom: -35px;
+  left: 0;
+}

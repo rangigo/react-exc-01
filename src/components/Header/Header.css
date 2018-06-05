@@ -1,0 +1,40 @@
+.Header {
+  background: #404040;
+}
+
+.Header > div {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.HeaderImg {
+  width: 100%;
+  height: auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 1.5em;
+  display: inline-block;
+}
+
+h1 > span {
+  color: white;
+}
+
+.HeaderContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.HeaderDesc {
+  padding-right: 50px;
+  color: #ccc;
+}
+
+.HeaderDesc > span {
+  margin-top: 15px;
+  margin-bottom: 30px;
+  display: inline-block;
+}
