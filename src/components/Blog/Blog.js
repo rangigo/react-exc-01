@@ -3,7 +3,7 @@ import React from 'react'
 import classes from './Blog.css'
 
 const blog = (props) => {
-  let img = props.imgSrc ? (<img src={props.imgSrc} alt='a header img'/>) : null
+  let img = props.imgSrc ? (<img src={window.location.origin + props.imgSrc} alt='a header img'/>) : null
 
   return (
     <div className={classes.Blog}>
