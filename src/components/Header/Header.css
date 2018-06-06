@@ -1,5 +1,6 @@
 .Header {
   background: #404040;
+  padding-top: 30px;
 }
 
 .Header > div {
@@ -21,6 +22,7 @@ h1 {
 
 h1 > span {
   color: white;
+  font-style: italic;
 }
 
 .HeaderContainer {

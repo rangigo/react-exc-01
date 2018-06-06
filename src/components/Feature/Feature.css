@@ -8,8 +8,15 @@
   font-size: 1em;
 }
 
+.Feature h1 > span {
+  color: black;
+  font-style: normal;
+  font-weight: 600;
+}
+
 .Feature:hover {
   background: white;
+  box-shadow: 7px 2px 17px -4px rgba(0,0,0,0.57);
 }
 
 .Feature:hover::after {
@@ -21,3 +28,24 @@
   bottom: -25px;
   left: 0;
 }
+
+.Feature:hover > .CircleIcon {
+  animation: spin 0.4s linear;
+  background: #48a4f0;
+  box-shadow: inset 2px 1px 34px -15px rgba(0,0,0,1);
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+.CircleIcon {
+  width: 70px;
+  height: 70px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background: #ccc;
+  line-height: 5em;
+}
+

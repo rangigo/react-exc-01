@@ -9,8 +9,97 @@ main {
 
 .FeatureContainer {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.Border {
+  border: 5px solid #ccc;
+  border-image: repeating-linear-gradient(-45deg, #ccc, #ccc 3px, transparent 3px, transparent 6px) 5;
+}
+
+.Boundary {
+  position: relative;
+}
+
+.Boundary > span {
+  position: absolute;
+  text-transform: uppercase;
+  background: #efefef;
+  padding: 0 15px;
+  left: 42%;
+  top: -5px;
+}
+
+.RecentWork {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+
+.MainFooter {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 25px;
+}
+
+.Testi {
+  padding-top: 30px; padding-bottom: 60px;
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr;
+  grid-gap: 25px;
+  grid-row-gap: 60px;
+}
+
+.Testi > div {
+  flex-basis: 45%;
+}
+
+.Dev {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+}
+
+.Dev > ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.Dev > ul > li {
+  padding: 10px 20px;
+  background: #e2e2e2;
+  cursor: pointer;
+}
+
+.Dev > ul > li.active {
+  pointer-events: none;
+  background: white;
+  font-weight: bold;
+}
+
+.DevDesc {
+  box-shadow: 7px 2px 17px -4px rgba(0,0,0,0.57);
+  background: white;
+  padding: 25px 15px;
+  overflow: hidden;
+}
+
+.DevDesc > h4 {
+  margin-top: 0;
+}
+
+.DevDesc > p:nth-child(3) {
+  font-style: italic;
+}
+
+.DevDesc > button {
+  float: right;
 }

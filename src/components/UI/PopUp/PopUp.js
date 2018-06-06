@@ -10,7 +10,7 @@ const popUp = props => {
       <h1>
         {props.children}
       </h1>
-      <Button btnType="WhiteBtn">get started</Button>
+      <Button btnType="WhiteBtn">{props.btnText}</Button>
     </div>
   )
 }

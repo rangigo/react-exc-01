@@ -1,0 +1,78 @@
+footer {
+  background: #3f3f3f;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  color: #ccc;
+}
+
+.FooterContainer {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 25px;
+}
+
+.FooterContainer span {
+  display: block;
+}
+
+.FooterContainer > section > h4 {
+  color: white;
+  text-transform: uppercase;
+}
+
+.LatestPosts > span {
+  padding: 10px 0;
+  border-bottom: 2px solid #251d1dc7;
+}
+
+.LatestPosts > span:first-of-type {
+  padding-top: 0;
+}
+
+.LatestPosts > span:last-child {
+  border-bottom: none;
+}
+
+.FlickrContainer {
+  display: grid;
+  grid-template: 1fr 1fr / repeat(4, 1fr) ;
+  grid-gap: 5px;
+}
+
+.FlickrContainer > div {
+  background: #262626;
+  width: 55px; height: 55px;
+}
+
+.Credit {
+  background: #343434;
+  position: relative;
+  padding: 20px 0;
+  color: #ccc;
+}
+
+.Credit > div {
+  display: flex;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.Credit > div > span:first-of-type {
+  text-transform: uppercase;
+  margin: auto auto auto 0;
+}
+
+.Credit > div > i {
+  color: rgb(26, 24, 24);
+  margin-right: 10px;
+}
+
+.Credit > div > i:hover {
+  color: #ccc;
+  cursor: pointer;
+}
+.Credit > div > i:last-of-type {
+  margin-right: 0;
+}

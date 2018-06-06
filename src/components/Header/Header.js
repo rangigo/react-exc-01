@@ -23,8 +23,8 @@ const header = () => {
             <Button>learn more</Button>
           </div>
         </div>
-        <PopUp>
-          Create <span>powerful</span> solution now
+        <PopUp btnText='get started'>
+          Create <span>powerful</span> solution now!
         </PopUp>
       </div>
     </header>
